@@ -5,18 +5,19 @@
 #include <algorithm>
 using namespace std;
 
+#define MOD 1000000007
 #define MAX 200000
-#include TREE_SIZE 524288
+#define TREE_SIZE 524288
 
 struct city {
-    long long dist,
+    long long dist;
     int p;
     bool operator < (city &other) {
         return (p < other.p);
     }
 } cities[MAX + 1];
 
-long long distArray[MAX + 1]
+long long distArray[MAX + 1];
 
 struct {
     int start;
@@ -25,8 +26,12 @@ struct {
     int count;
 }segTree[TREE_SIZE]; 
 int idToSegTreeId[MAX + 1];
+int N;
 
 void constructSegTree(int start, int end, int id) {
+    if (start > end)
+        return;
+    
     segTree[id].start = start;
     segTree[id].end = end;
     if (start == end) {
@@ -54,24 +59,24 @@ void removeId(int id) {
     }
 }
 
-int getCount(int start, int end, int id) {
+int findCount(int start, int end, int id) {
     if (end < segTree[id].start || start > segTree[id].end) {
         return 0;
     }
     if (start <= segTree[id].start && end>=segTree[id].end)
         return segTree[id].count;
     
-   return getCount(start, end, 2*id) + getCount(start, end, 2*id + 1);
+   return findCount(start, end, 2*id) + findCount(start, end, 2*id + 1);
 }
 
-int getDistSum(int start, int end, int id) {
+int findSum(int start, int end, int id) {
     if (end < segTree[id].start || start > segTree[id].end) {
         return 0;
     }
     if (start <= segTree[id].start && end>=segTree[id].end)
         return segTree[id].distSum;
     
-   return getDistSum(start, end, 2*id) + getDistSum(start, end, 2*id + 1);
+   return findSum(start, end, 2*id) + findSum(start, end, 2*id + 1);
 }
 
 int findDistId(long long dist) {
@@ -88,6 +93,8 @@ int findDistId(long long dist) {
             start = m + 1;
         }
     }
+    
+    return -1;
 }
 
 int main() {
@@ -95,17 +102,34 @@ int main() {
     int T;
     cin>> T;
     while(T--) {
-        int N;
+
         for (int i=1; i<=N; i++) {
-            cin>>city[i].dist;
-            distArray[i] = city[i].dist;
+            cin>>cities[i].dist;
+            distArray[i] = cities[i].dist;
         }
         for (int i=1; i<=N; i++) {
-            cin>>city[i].p;
+            cin>>cities[i].p;
         }
-        sort(city +1, city + N +1);
+        sort(cities +1, cities + N +1);
         sort(distArray + 1, distArray + N + 1);
         constructSegTree(1,N,1);
+        long long sum = 0;
+        for (int i =N; i>=1; i--) {
+            int p = cities[i].p;
+            int distId = findDistId(cities[i].dist);
+            
+            long long leftSum = 0;
+            long long rightSum  = 0;
+            if (distId > 1) 
+                leftSum = cities[i].p*(findCount(1, distId -1, 1)*cities[i].dist - findSum(1, distId -1, 1)) % MOD;
+            if (distId < N)
+                rightSum = cities[i].p*(findSum(distId + 1, N, 1) - findCount(distId + 1,N, 1)*cities[i].dist) % MOD;
+            
+            sum = ((leftSum + rightSum)%MOD + sum)%MOD;
+            removeId(distId);
+        }
+        
+        cout << sum << endl;
     }
     return 0;
 }
