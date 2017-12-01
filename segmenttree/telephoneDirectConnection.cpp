@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/challenges/direct-connections/problem
+
 #include <cmath>
 #include <cstdio>
 #include <vector>
@@ -8,6 +10,10 @@ using namespace std;
 #define MOD 1000000007
 #define MAX 200000
 #define TREE_SIZE 524288
+
+//#define MAX 20
+//#define TREE_SIZE 100
+
 
 struct city {
     long long dist;
@@ -69,7 +75,7 @@ int findCount(int start, int end, int id) {
    return findCount(start, end, 2*id) + findCount(start, end, 2*id + 1);
 }
 
-int findSum(int start, int end, int id) {
+long long findSum(int start, int end, int id) {
     if (end < segTree[id].start || start > segTree[id].end) {
         return 0;
     }
@@ -102,6 +108,7 @@ int main() {
     int T;
     cin>> T;
     while(T--) {
+        cin>>N;
 
         for (int i=1; i<=N; i++) {
             cin>>cities[i].dist;
