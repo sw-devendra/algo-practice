@@ -31,7 +31,7 @@ struct {
     long long distSum;
     int count;
 }segTree[TREE_SIZE]; 
-int idToSegTreeId[MAX + 1];
+int idToSegTreeId[MAX + 1]; // Used to remove the element (city) from segment tree
 int N;
 
 void constructSegTree(int start, int end, int id) {
@@ -54,6 +54,7 @@ void constructSegTree(int start, int end, int id) {
 }
 
 void removeId(int id) {
+    // Just make the entry ineffective by setting values to zero
     int sid = idToSegTreeId[id];
     segTree[sid].distSum = 0;
     segTree[sid].count = 0;
@@ -85,6 +86,7 @@ long long findSum(int start, int end, int id) {
    return findSum(start, end, 2*id) + findSum(start, end, 2*id + 1);
 }
 
+// gets distance id in distArray
 int findDistId(long long dist) {
     int start = 1; int end = N;
 
