@@ -1,4 +1,6 @@
 // Doubly linkeed list based buckets
+// This is a special purpose data structure very similar to hash table, but provides an eficient way to move the information
+// among buckets when key of information/bucket-id may change because of special need of given problem
 
 #include <iostream>
 
@@ -22,7 +24,7 @@ struct BucketNode {
         }
         bucketNodesCnt--;
     }
-} *buckets[MAX];
+} *buckets[MAX]; // kind of hash table
 int bucketSize[MAX];
 int BucketNode::bucketNodesCnt = 0;
 
@@ -76,7 +78,7 @@ void testCreation(int count, int maxID) {
 
 void testMovements(int count, int maxID) {
     for (int i=0; i<count; i++) {
-        int sid = -1;
+        int sid = -1; // source id
         do {
             sid = rand() % maxID;
         }while (bucketSize[sid] == 0);
@@ -86,7 +88,7 @@ void testMovements(int count, int maxID) {
             bn = bn->next;
             bucketNodeId--;
         }
-        int tid = rand()%maxID;
+        int tid = rand()%maxID; // target id
         remove(bn);
         insertFront(bn, tid);
     }
