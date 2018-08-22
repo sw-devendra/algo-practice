@@ -7,8 +7,8 @@
 #include <iostream>
 #include <algorithm>
 
-#define MAX 1000000
-#define MAX_VAL 1000000
+#define MAX 10000000
+#define MAX_VAL 10000000
 #define MINUS_INF 0
 
 class minheap{
