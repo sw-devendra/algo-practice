@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/challenges/direct-connections/problem
+
 #include <cmath>
 #include <cstdio>
 #include <vector>
@@ -8,6 +10,10 @@ using namespace std;
 #define MOD 1000000007
 #define MAX 200000
 #define TREE_SIZE 524288
+
+//#define MAX 20
+//#define TREE_SIZE 100
+
 
 struct city {
     long long dist;
@@ -25,7 +31,7 @@ struct {
     long long distSum;
     int count;
 }segTree[TREE_SIZE]; 
-int idToSegTreeId[MAX + 1];
+int idToSegTreeId[MAX + 1]; // Used to remove the element (city) from segment tree
 int N;
 
 void constructSegTree(int start, int end, int id) {
@@ -48,6 +54,7 @@ void constructSegTree(int start, int end, int id) {
 }
 
 void removeId(int id) {
+    // Just make the entry ineffective by setting values to zero
     int sid = idToSegTreeId[id];
     segTree[sid].distSum = 0;
     segTree[sid].count = 0;
@@ -69,7 +76,7 @@ int findCount(int start, int end, int id) {
    return findCount(start, end, 2*id) + findCount(start, end, 2*id + 1);
 }
 
-int findSum(int start, int end, int id) {
+long long findSum(int start, int end, int id) {
     if (end < segTree[id].start || start > segTree[id].end) {
         return 0;
     }
@@ -79,6 +86,7 @@ int findSum(int start, int end, int id) {
    return findSum(start, end, 2*id) + findSum(start, end, 2*id + 1);
 }
 
+// gets distance id in distArray
 int findDistId(long long dist) {
     int start = 1; int end = N;
 
@@ -102,6 +110,7 @@ int main() {
     int T;
     cin>> T;
     while(T--) {
+        cin>>N;
 
         for (int i=1; i<=N; i++) {
             cin>>cities[i].dist;
