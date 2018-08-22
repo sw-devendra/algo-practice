@@ -4,9 +4,11 @@
 // Unique numbers 
 
 
-#include <iostream> 
-#define MAX 1000
-#define MAX_VAL 1000
+#include <iostream>
+#include <algorithm>
+
+#define MAX 1000000
+#define MAX_VAL 1000000
 #define MINUS_INF 0
 
 class minheap{
@@ -166,8 +168,104 @@ void basicTestGetMin() {
 
 	return;
 }
-int main() {
-	basicTestGetMin();
 
+int added[MAX];
+void testRandomInsertionNDeletion(int opCnt, bool varify) {
+	// Varify if insertion and getMin are working
+	srand(MAX);
+
+	int end = MAX;
+	int addedCount = 0;
+	// num => added/not => added 1/0
+	for (int i = 1; i<=end; i++) {
+		nums[i] = 0;
+	}
+
+	minheap mh;
+
+	// add 50%
+	for (int i = 1; i <= end/50; i++) {
+
+		int val = rand()%end;
+
+		while (nums[val] == true) { // find not added
+			val = rand()%end;
+		}
+
+		mh.insert(val);
+		nums[val] = 1;
+		added[addedCount] = val;
+		
+		addedCount++;
+	}
+
+
+	while(opCnt) {
+		opCnt--;
+		int opId = rand()%3;
+		switch(opId) {
+			case 0: 
+			{
+				int minVal = mh.getMin();
+				if (minVal == -1 && addedCount != 0) {
+					cout<<"Error: Wrong underflow";
+				}
+				else if (minVal != -1 && nums[minVal] != true) {
+					cout<<"Error: Returning not added number";
+				}
+				cout << "getMin: "<<minVal;
+				if(minVal != -1 && varify) {
+					int *v = min_element(added, added + addedCount);
+					if (*v != minVal) {
+						cout<<endl<<"Error: Fetched Wrong min Value. Fetched "<< minVal << " Real: "<< *v;
+					}
+				}
+			}
+			break;
+
+			case 1:
+			{
+				int val = rand()%end;
+
+				while (nums[val] == true) { // find not added
+					val = rand()%end;
+				}
+
+				mh.insert(val);
+				nums[val] = 1;
+				added[addedCount] = val;
+				
+				addedCount++;
+				cout<<"Added " <<val;
+			}
+			break;
+
+			case 2:
+			{
+				if (addedCount) {
+					int val = added[addedCount -1];
+					mh.remove(val);
+					nums[val] = 0;
+					addedCount--;
+					cout<<"Removed "<<val;
+				}
+				else{
+					cout<<"Nothing to removed ";
+				}
+			}
+			break;
+		}
+		cout<<endl;
+	}
+	cout << "done" << endl;
+	char ch;
+	cin >> ch;
+
+	return;
+}
+int main() {
+	//basicTestGetMin();
+	//testRandomInsertionNDeletion(100, true);
+	testRandomInsertionNDeletion(50000, false);
 	return 0;
 }
