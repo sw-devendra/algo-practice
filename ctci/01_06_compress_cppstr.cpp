@@ -63,9 +63,9 @@ string compressedStr(string s) {
     }
 
     string compStr;
-    compStr.reserve(postLen+1);
-
+    compStr.reserve(postLen+1); // To check the changed capacity : cout << compStr.capacity() <<endl;
     compStr += s[0];
+    
     int srcI = 1;
     int lastCharCnt = 1;
     for(;srcI <= s.length(); srcI++) {
