@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <array>
 
 #define MAX 1000
 using namespace std;
@@ -30,11 +31,10 @@ int distance(const string &str1, const string &str2) {
     }
 
     return table[str1.length()][str2.length()];
-
 }
 
 int main() {
-    string tcs[][2] = {
+    vector<array<string,2>> tcs = { // Not possible to declare vector<string[2]> tcs, this is not supported in C++
         {"devendra", "dAvendra"}, // 1
         {"evendra", "devendra"}, // 1
         {"devndra", "devendra"}, // 1
