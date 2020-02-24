@@ -1,6 +1,6 @@
 #include <iostream>
 
-#define MAX_STACK 3
+#define MAX_STACK 4
 #define END -1
 using namespace std;
 
@@ -90,17 +90,33 @@ private:
 };
 
 int main() {
+    int poolSize = 10;
     StackPool sp(10);
+    cout<<"Using one of the stacks at a time: "<<endl;
     // Using just one stack at a time
-    for (int sti=0; sti<3; sti++) {
-        for (int i=1; i<=11; i++) {
+    for (int sti=0; sti<MAX_STACK; sti++) {
+        for (int i=1; i<=poolSize; i++) {
             cout<<"Pushing in "<<sti<<"th stack: "<<i*10<<endl;
-            sp.push(10*i,0); // last push will show error
+            sp.push(10*i,sti); // last push will show error
         }
         for (int i=1; i<=11; i++) {
-            cout<<"Top in "<<sti<<"th stack: "<<sp.top(0)<<endl;
+            cout<<"Top in "<<sti<<"th stack: "<<sp.top(sti)<<endl;
             cout<<"Poping from "<<sti<<"th stack: "<<endl;
+            sp.pop(sti);
         }    
     }
+
+    cout<<"Using all the stacks at a time: "<<endl;
+    // Using all the stacks at a time
+    for (int i=1; i<=11; i++) {
+        cout<<"Pushing in "<<i*10<<" in "<<i%MAX_STACK<<"th stack"<<endl;
+        sp.push(10*i,i%MAX_STACK); // last push will show error
+    }
+    for (int i=1; i<=11; i++) {
+        int sti = i%MAX_STACK;
+        cout<<"Top in "<<sti<<"th stack: "<<sp.top(sti)<<endl;
+        cout<<"Poping from "<<sti<<"th stack: "<<endl;
+        sp.pop(sti);
+    }      
     return 0;
 }
