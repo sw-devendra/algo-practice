@@ -41,6 +41,7 @@ private:
         vector<string> names;
         if (node->isFile) {
             names.push_back(node->name);
+            return names;
         }
 
         for (auto ch : node->children) {
