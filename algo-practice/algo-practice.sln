@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "algo-practice", "algo-practice.vcxproj", "{BC07DDB9-CA09-45E0-8C59-7832039BEDDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC07DDB9-CA09-45E0-8C59-7832039BEDDF}.Debug|x64.ActiveCfg = Debug|x64
+		{BC07DDB9-CA09-45E0-8C59-7832039BEDDF}.Debug|x64.Build.0 = Debug|x64
+		{BC07DDB9-CA09-45E0-8C59-7832039BEDDF}.Debug|x86.ActiveCfg = Debug|Win32
+		{BC07DDB9-CA09-45E0-8C59-7832039BEDDF}.Debug|x86.Build.0 = Debug|Win32
+		{BC07DDB9-CA09-45E0-8C59-7832039BEDDF}.Release|x64.ActiveCfg = Release|x64
+		{BC07DDB9-CA09-45E0-8C59-7832039BEDDF}.Release|x64.Build.0 = Release|x64
+		{BC07DDB9-CA09-45E0-8C59-7832039BEDDF}.Release|x86.ActiveCfg = Release|Win32
+		{BC07DDB9-CA09-45E0-8C59-7832039BEDDF}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1062FC8-A763-4D5A-BD3C-CA218DE58290}
+	EndGlobalSection
+EndGlobal
