@@ -84,6 +84,8 @@ void testUpdate() {
     }while(more == 'y');
 }
 
+#if 0
+
 int main() {
 
     cout<<"Test Construction:"<<endl<<"Enter N: ";
@@ -99,3 +101,5 @@ int main() {
     cin>>dummy;
     return 0;
 }
+
+#endif // 0

@@ -27,6 +27,7 @@ void printVector(vector<int>& v) {
 	cout << endl;
 }
 
+#if 0
 int main() {
 	// Lower/Upper bound
 
@@ -43,3 +44,5 @@ int main() {
 
 	return 0;
 }
+
+#endif // 0
