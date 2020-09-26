@@ -3,57 +3,77 @@
 #include <vector>
 #include <algorithm>
 #include <string>
+#include <stdio.h>
 
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
 typedef int Record;
 #define TEST_IP_FILE "mergeSortTestIP.bin"
-#define IN_MEMORY_SORT_THRESHOLD 9
+#define TEST_OP_FILE "mergeSortTestIP-out.bin"
+#define IN_MEMORY_SORT_THRESHOLD 1000
 using namespace std;
 
-string mergeSort(string filePath) {
-	ifstream f(filePath, ios_base::binary);
-	f.seekg(0, ifstream::end);
-	int totalSize = f.tellg();
-	f.seekg(0, ifstream::beg);
-	vector<Record> result;
-	int level = 0;
+string mergeSort(string filePath, string outputFilePath) {
+	// Divide the original file in multiple, in memory sortable files
+	ifstream file(filePath, ios_base::binary);
+	if (!file.is_open()) {
+		cout << "Error: Failed to open file " << filePath <<endl;
+		return "";
+	}
+	int inMemorySortableRecordCnt = IN_MEMORY_SORT_THRESHOLD / sizeof(Record);
+	int memorySizeToRead = inMemorySortableRecordCnt * sizeof(Record);
+	file.seekg(0, ios_base::end);
+	int totalSize = file.tellg();
+	file.seekg(0, ios_base::beg);
+	int remainingBytes = totalSize;
 	vector<string> tempFiles;
-	int fileId = 0;
-	int remainingBytes = totalSize - f.tellg();
-	while (remainingBytes) {
-		int thresholdSizeInBytes = IN_MEMORY_SORT_THRESHOLD * sizeof(Record);
-		int bytesToRead = (remainingBytes > thresholdSizeInBytes) ? thresholdSizeInBytes : remainingBytes;
-		Record* input = new Record[bytesToRead/sizeof(Record)];
-		f.read((char*)input, bytesToRead);
-		remainingBytes = totalSize - f.tellg();
-		sort(input, input + bytesToRead / sizeof(Record));
-		string tempFileName = to_string(fileId++);
-		ofstream f(tempFileName, ios_base::binary);
-		f.write((char*)input, bytesToRead);
+	int tempFileId = 0;
+	while (remainingBytes > 0) {
+		if (memorySizeToRead > remainingBytes) {
+			memorySizeToRead = remainingBytes;
+		}
+		Record* records = new Record[memorySizeToRead / sizeof(Record)];
+		file.read((char*)records, memorySizeToRead);
+		remainingBytes -= memorySizeToRead;
+		// ToTo: check read was successful
+		sort(records, records + memorySizeToRead / sizeof(Record));
+		string tempFileName = to_string(tempFileId++);
+		ofstream of(tempFileName, ios_base::binary);
+		if (!of.is_open()) {
+			cout << "Error: Cannot open temp file " << tempFileName << endl;
+			return "";
+		}
+		of.write((char*)records, memorySizeToRead);
+		
+		delete []records;
 		tempFiles.push_back(tempFileName);
-		delete []input;
-		f.close();
 	}
 
+	// Merge temp files N=> N/2 => N=>4--- =>1
 	while (tempFiles.size() != 1) {
-		vector<string> mergedTemp;
+		vector<string> mergedFiles;
 		for (int i = 0; i < tempFiles.size(); i = i + 2) {
 			if ((i + 1) == tempFiles.size()) {
-				mergedTemp.push_back(tempFiles[i]);
+				mergedFiles.push_back(tempFiles[i]);
 				break;
 			}
-			string output(to_string(fileId++));
-			ofstream outFile(output, ios_base::binary);
-			if (!outFile.good()) {
-				cout << "Error: Cannot open " << output;
+			ifstream if1(tempFiles[i], ios_base::binary);
+			ifstream if2(tempFiles[i + 1], ios_base::binary);
+			if (!if1.is_open() || !if2.is_open()) {
+				// ToDo: remove all temp files
+				cout << "Error: Cannot open temp files " << tempFiles[i] <<" or " << tempFiles[i+1] << endl;
 				return "";
 			}
 			Record val1 = -1;
 			Record val2 = -1;
-			ifstream if1(tempFiles[i], ios_base::binary);
-			ifstream if2(tempFiles[i+1], ios_base::binary);
-			while (true) {
+			// If size of tempfiles vector is 2, this merge will be the final merge
+			string tempFileName = (tempFiles.size() == 2)?outputFilePath: to_string(tempFileId++);
+			ofstream of(tempFileName, ios_base::binary);
+			if (!of.is_open()) {
+				cout << "Error: Cannot open temp files " << tempFileName << endl;
+				return "";
+			}
+			while (!if1.eof() || !if2.eof()) {
 				if (val1 == -1) {
 					if1.read((char*)&val1, sizeof(Record));
 					if (if1.eof()) {
@@ -67,30 +87,36 @@ string mergeSort(string filePath) {
 					}
 				}
 				if (val1 == -1 && val2 == -1) {
-					break; // EOF of both the files
+					break;
 				}
-				Record outVal = -1;
+				Record val = -1;
+				// consumed variable is set to -1
 				if (val1 == -1) {
-					outVal = val2; // val2 is being consumed
+					val = val2;
 					val2 = -1;
 				}
 				else if (val2 == -1) {
-					outVal = val1; // val2 is being consumed
+					val = val1;
 					val1 = -1;
 				}
 				else if (val1 < val2) {
-					outVal = val1;
+					val = val1;
 					val1 = -1;
 				}
 				else {
-					outVal = val2;
+					val = val2;
 					val2 = -1;
 				}
-				outFile.write((char*)&outVal, sizeof(Record));
+				of.write((char*)&val, sizeof(Record));
 			}
-			mergedTemp.push_back(output);
+			// Removed both of the merged input files
+			if1.close();
+			if2.close();
+			remove(tempFiles[i].c_str()); 
+			remove(tempFiles[i+1].c_str());
+			mergedFiles.push_back(tempFileName);
 		}
-		tempFiles = mergedTemp;
+		tempFiles = mergedFiles;
 	}
 	return tempFiles[0];
 }
@@ -109,6 +135,7 @@ void generateTempInput(int n) {
 
 void testFile(string filePath) {
 	ifstream f(filePath, ifstream::binary);
+	cout << "File: " << filePath << endl;
 	if (f.good()) {
 		srand(time(0));
 		while (!f.eof()) {
@@ -120,19 +147,14 @@ void testFile(string filePath) {
 			cout << v << '\t';
 		}
 	}
-	cout << endl;
+	cout << endl << endl;
 	f.close();
 }
 
 int main() {
-	vector<int> v = { 12, 34, 2, 6, 7, 34, 9, 12, 76, 22 };
-	generateTempInput(123);
+	generateTempInput(50000);
 	testFile(TEST_IP_FILE);
-	string output = mergeSort(TEST_IP_FILE);
+	string output = mergeSort(TEST_IP_FILE, TEST_OP_FILE);
 	testFile(output);
-	//auto result = mergeSort(v);
-	//for (auto r : result) {
-	//	cout << r << " ";
-	//}
 	return 0;
 }
