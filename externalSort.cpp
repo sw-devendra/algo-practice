@@ -150,11 +150,11 @@ void testFile(string filePath) {
 	cout << endl << endl;
 	f.close();
 }
-
-int main() {
-	generateTempInput(50000);
-	testFile(TEST_IP_FILE);
-	string output = mergeSort(TEST_IP_FILE, TEST_OP_FILE);
-	testFile(output);
-	return 0;
-}
+//
+//int main() {
+//	generateTempInput(50000);
+//	testFile(TEST_IP_FILE);
+//	string output = mergeSort(TEST_IP_FILE, TEST_OP_FILE);
+//	testFile(output);
+//	return 0;
+//}

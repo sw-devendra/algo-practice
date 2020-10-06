@@ -139,8 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\externalSort.cpp" />
     <ClCompile Include="..\lc\wordBreakii.cpp" />
+    <ClCompile Include="..\segmenttree\findMinInRange.cpp" />
     <ClCompile Include="..\stl\vector-tricks.cpp" />
+    <ClCompile Include="externalSort-TextFile.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
