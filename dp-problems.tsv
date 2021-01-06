@@ -1,255 +1,235 @@
-1.Linear DP
-https://leetcode.com/problems/climbing-stairs/	Done
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock/	Done
-https://leetcode.com/problems/min-cost-climbing-stairs/	Done
-https://leetcode.com/problems/divisor-game/
-https://leetcode.com/problems/decode-ways/
-https://leetcode.com/problems/unique-binary-search-trees/
-https://leetcode.com/problems/house-robber/
-https://leetcode.com/problems/perfect-squares/
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
-https://leetcode.com/problems/coin-change/
-https://leetcode.com/problems/counting-bits/
-https://leetcode.com/problems/integer-break/
-https://leetcode.com/problems/count-numbers-with-unique-digits/
-https://leetcode.com/problems/wiggle-subsequence/
-https://leetcode.com/problems/partition-equal-subset-sum/
-https://leetcode.com/problems/maximum-length-of-pair-chain/
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
-https://leetcode.com/problems/delete-and-earn/
-https://leetcode.com/problems/domino-and-tromino-tiling/
-https://leetcode.com/problems/knight-dialer/
-https://leetcode.com/problems/minimum-cost-for-tickets/
-https://leetcode.com/problems/partition-array-for-maximum-sum/
-https://leetcode.com/problems/filling-bookcase-shelves/
-https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/
-https://leetcode.com/problems/greatest-sum-divisible-by-three/
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
-https://leetcode.com/problems/student-attendance-record-ii/
-https://leetcode.com/problems/decode-ways-ii/
-https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero/
-https://leetcode.com/problems/maximum-profit-in-job-scheduling/
-https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/
-https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/
-https://leetcode.com/problems/stone-game-iii/
-https://leetcode.com/problems/restore-the-array/
-https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/
-https://leetcode.com/problems/stone-game-iv/
-
-2.Knapsack
-https://leetcode.com/problems/house-robber-ii/
-https://leetcode.com/problems/ones-and-zeroes/
-https://leetcode.com/problems/target-sum/
-https://leetcode.com/problems/shopping-offers/
-https://leetcode.com/problems/2-keys-keyboard/
-https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/
-https://leetcode.com/problems/best-team-with-no-conflicts/
-https://leetcode.com/problems/profitable-schemes/
-https://leetcode.com/problems/tallest-billboard/
-https://leetcode.com/problems/pizza-with-3n-slices/
-https://leetcode.com/problems/reducing-dishes/
-
-3.Multi Dimensions DP
-https://leetcode.com/problems/triangle/
-https://leetcode.com/problems/combination-sum-iv/
-https://leetcode.com/problems/out-of-boundary-paths/
-https://leetcode.com/problems/knight-probability-in-chessboard/
-https://leetcode.com/problems/champagne-tower/
-https://leetcode.com/problems/largest-sum-of-averages/
-https://leetcode.com/problems/minimum-falling-path-sum/
-https://leetcode.com/problems/video-stitching/
-https://leetcode.com/problems/longest-arithmetic-subsequence/
-https://leetcode.com/problems/stone-game-ii/
-https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/
-https://leetcode.com/problems/dice-roll-simulation/
-https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
-https://leetcode.com/problems/create-maximum-number/
-https://leetcode.com/problems/frog-jump/
-https://leetcode.com/problems/split-array-largest-sum/
-https://leetcode.com/problems/freedom-trail/
-https://leetcode.com/problems/minimum-number-of-refueling-stops/
-https://leetcode.com/problems/number-of-music-playlists/
-https://leetcode.com/problems/count-vowels-permutation/
-https://leetcode.com/problems/minimum-falling-path-sum-ii/
-https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/
-https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/
-https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/
-https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/
-https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/
-https://leetcode.com/problems/paint-house-iii/
-https://leetcode.com/problems/count-all-possible-routes/
-
-4.Interval DP
-https://leetcode.com/problems/guess-number-higher-or-lower-ii/
-https://leetcode.com/problems/arithmetic-slices/
-https://leetcode.com/problems/predict-the-winner/
-https://leetcode.com/problems/palindromic-substrings/
-https://leetcode.com/problems/stone-game/
-https://leetcode.com/problems/minimum-score-triangulation-of-polygon/
-https://leetcode.com/problems/last-stone-weight-ii/
-https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/
-https://leetcode.com/problems/stone-game-vii/
-https://leetcode.com/problems/burst-balloons/
-https://leetcode.com/problems/remove-boxes/
-https://leetcode.com/problems/strange-printer/
-https://leetcode.com/problems/valid-permutations-for-di-sequence/
-https://leetcode.com/problems/minimum-cost-to-merge-stones/
-https://leetcode.com/problems/allocate-mailboxes/
-https://leetcode.com/problems/minimum-cost-to-cut-a-stick/
-https://leetcode.com/problems/stone-game-v/
-
-5.bit DP
-https://leetcode.com/problems/can-i-win/
-https://leetcode.com/problems/partition-to-k-equal-sum-subsets/
-https://leetcode.com/problems/stickers-to-spell-word/
-https://leetcode.com/problems/shortest-path-visiting-all-nodes/
-https://leetcode.com/problems/smallest-sufficient-team/
-https://leetcode.com/problems/maximum-students-taking-exam/
-https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/
-https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/
-https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/
-https://leetcode.com/problems/distribute-repeating-integers/
-https://leetcode.com/problems/maximize-grid-happiness/
-
-6.Digit DP
-https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/
-https://leetcode.com/problems/numbers-at-most-n-given-digit-set/
-https://leetcode.com/problems/numbers-with-repeated-digits/
-
-7.DP on Trees
-https://leetcode.com/problems/unique-binary-search-trees-ii/
-https://leetcode.com/problems/house-robber-iii/
-https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/
-https://leetcode.com/problems/linked-list-in-binary-tree/
-https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/
-https://leetcode.com/problems/binary-tree-cameras/
-https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/
-https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/
-
-8.String DP
-https://leetcode.com/problems/is-subsequence/
-https://leetcode.com/problems/palindrome-partitioning/
-https://leetcode.com/problems/word-break/
-https://leetcode.com/problems/unique-substrings-in-wraparound-string/
-https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/
-https://leetcode.com/problems/longest-string-chain/
-https://leetcode.com/problems/longest-happy-string/
-https://leetcode.com/problems/longest-valid-parentheses/
-https://leetcode.com/problems/distinct-subsequences/
-https://leetcode.com/problems/word-break-ii/
-https://leetcode.com/problems/count-the-repetitions/
-https://leetcode.com/problems/concatenated-words/
-https://leetcode.com/problems/count-different-palindromic-subsequences/
-https://leetcode.com/problems/distinct-subsequences-ii/
-https://leetcode.com/problems/longest-chunked-palindrome-decomposition/
-https://leetcode.com/problems/palindrome-partitioning-iii/
-https://leetcode.com/problems/find-all-good-strings/
-https://leetcode.com/problems/string-compression-ii/
-https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/
-
-9.Probability DP
-https://leetcode.com/problems/soup-servings/
-https://leetcode.com/problems/new-21-game/
-https://leetcode.com/problems/airplane-seat-assignment-probability/
-
-10.Classic DPs
-A.Cadane's Algorithm
-https://leetcode.com/problems/maximum-subarray/
-https://leetcode.com/problems/maximum-product-subarray/
-https://leetcode.com/problems/bitwise-ors-of-subarrays/
-https://leetcode.com/problems/longest-turbulent-subarray/
-https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/
-https://leetcode.com/problems/k-concatenation-maximum-sum/
-https://leetcode.com/problems/largest-divisible-subset/
-https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/
-
-B.LCS
-https://leetcode.com/problems/longest-palindromic-substring/
-https://leetcode.com/problems/longest-palindromic-subsequence/
-https://leetcode.com/problems/maximum-length-of-repeated-subarray/
-https://leetcode.com/problems/longest-common-subsequence/
-https://leetcode.com/problems/regular-expression-matching/
-https://leetcode.com/problems/wildcard-matching/
-https://leetcode.com/problems/edit-distance/
-https://leetcode.com/problems/interleaving-string/
-https://leetcode.com/problems/shortest-common-supersequence/
-https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
-https://leetcode.com/problems/max-dot-product-of-two-subsequences/
-
-C.LIS
-https://leetcode.com/problems/longest-increasing-subsequence/
-https://leetcode.com/problems/number-of-longest-increasing-subsequence/
-https://leetcode.com/problems/russian-doll-envelopes/
-https://leetcode.com/problems/delete-columns-to-make-sorted-iii/
-https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/
-https://leetcode.com/problems/maximum-height-by-stacking-cuboids/
-
-D.2D Grid Traversal
-https://leetcode.com/problems/unique-paths/
-https://leetcode.com/problems/unique-paths-ii/
-https://leetcode.com/problems/minimum-path-sum/
-https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/
-https://leetcode.com/problems/where-will-the-ball-fall/
-https://leetcode.com/problems/dungeon-game/
-https://leetcode.com/problems/cherry-pickup/
-https://leetcode.com/problems/number-of-paths-with-max-score/
-https://leetcode.com/problems/cherry-pickup-ii/
-https://leetcode.com/problems/kth-smallest-instructions/
-
-E.Cumulative Sum
-https://leetcode.com/problems/range-sum-query-immutable/
-https://leetcode.com/problems/maximal-square/
-https://leetcode.com/problems/range-sum-query-2d-immutable/
-https://leetcode.com/problems/largest-plus-sign/
-https://leetcode.com/problems/push-dominoes/
-https://leetcode.com/problems/largest-1-bordered-square/
-https://leetcode.com/problems/count-square-submatrices-with-all-ones/
-https://leetcode.com/problems/matrix-block-sum/
-https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/
-https://leetcode.com/problems/count-submatrices-with-all-ones/
-https://leetcode.com/problems/ways-to-make-a-fair-array/
-https://leetcode.com/problems/maximal-rectangle/
-https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/
-https://leetcode.com/problems/super-washing-machines/
-https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/
-https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/
-https://leetcode.com/problems/get-the-maximum-score/
-
-F.Hashmap (SubArray)
-https://leetcode.com/problems/continuous-subarray-sum/
-https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/
-https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/
-
-11.DP + Alpha (Tricks/DS)
-https://leetcode.com/problems/arithmetic-slices-ii-subsequence/
-https://leetcode.com/problems/odd-even-jump/
-https://leetcode.com/problems/constrained-subsequence-sum/
-https://leetcode.com/problems/delivering-boxes-from-storage-to-ports/
-
-12.Insertion DP
-https://leetcode.com/problems/k-inverse-pairs-array/
-
-13.Graph DP
-https://leetcode.com/problems/cheapest-flights-within-k-stops/
-https://leetcode.com/problems/find-the-shortest-superstring/
-
-14.Memoization
-https://leetcode.com/problems/minimum-jumps-to-reach-home/
-https://leetcode.com/problems/scramble-string/
-https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/
-https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/
-https://leetcode.com/problems/jump-game-v/
-https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/
-
-15.Binary Lifting
-https://leetcode.com/problems/kth-ancestor-of-a-tree-node/
-
-16.Math
-https://leetcode.com/problems/ugly-number-ii/
-https://leetcode.com/problems/count-sorted-vowel-strings/
-https://leetcode.com/problems/race-car/
-https://leetcode.com/problems/super-egg-drop/
-https://leetcode.com/problems/least-operators-to-express-number/
-https://leetcode.com/problems/largest-multiple-of-three/
+1.Linear DP	Date	Not Done
+https://leetcode.com/problems/climbing-stairs/	2021-01-06	Done
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/	2021-01-07	Done
+https://leetcode.com/problems/min-cost-climbing-stairs/	Date	2021-01-07 Done
+https://leetcode.com/problems/divisor-game/	Date	Not Done
+https://leetcode.com/problems/decode-ways/	Date	Not Done
+https://leetcode.com/problems/unique-binary-search-trees/	Date	Not Done
+https://leetcode.com/problems/house-robber/	Date	Not Done
+https://leetcode.com/problems/perfect-squares/	Date	Not Done
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/	Date	Not Done
+https://leetcode.com/problems/coin-change/	Date	Not Done
+https://leetcode.com/problems/counting-bits/	Date	Not Done
+https://leetcode.com/problems/integer-break/	Date	Not Done
+https://leetcode.com/problems/count-numbers-with-unique-digits/	Date	Not Done
+https://leetcode.com/problems/wiggle-subsequence/	Date	Not Done
+https://leetcode.com/problems/partition-equal-subset-sum/	Date	Not Done
+https://leetcode.com/problems/maximum-length-of-pair-chain/	Date	Not Done
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/	Date	Not Done
+https://leetcode.com/problems/delete-and-earn/	Date	Not Done
+https://leetcode.com/problems/domino-and-tromino-tiling/	Date	Not Done
+https://leetcode.com/problems/knight-dialer/	Date	Not Done
+https://leetcode.com/problems/minimum-cost-for-tickets/	Date	Not Done
+https://leetcode.com/problems/partition-array-for-maximum-sum/	Date	Not Done
+https://leetcode.com/problems/filling-bookcase-shelves/	Date	Not Done
+https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/	Date	Not Done
+https://leetcode.com/problems/greatest-sum-divisible-by-three/	Date	Not Done
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/	Date	Not Done
+https://leetcode.com/problems/student-attendance-record-ii/	Date	Not Done
+https://leetcode.com/problems/decode-ways-ii/	Date	Not Done
+https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero/	Date	Not Done
+https://leetcode.com/problems/maximum-profit-in-job-scheduling/	Date	Not Done
+https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/	Date	Not Done
+https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/	Date	Not Done
+https://leetcode.com/problems/stone-game-iii/	Date	Not Done
+https://leetcode.com/problems/restore-the-array/	Date	Not Done
+https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/	Date	Not Done
+https://leetcode.com/problems/stone-game-iv/	Date	Not Done
+2.Knapsack	Date	Not Done
+https://leetcode.com/problems/house-robber-ii/	Date	Not Done
+https://leetcode.com/problems/ones-and-zeroes/	Date	Not Done
+https://leetcode.com/problems/target-sum/	Date	Not Done
+https://leetcode.com/problems/shopping-offers/	Date	Not Done
+https://leetcode.com/problems/2-keys-keyboard/	Date	Not Done
+https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/	Date	Not Done
+https://leetcode.com/problems/best-team-with-no-conflicts/	Date	Not Done
+https://leetcode.com/problems/profitable-schemes/	Date	Not Done
+https://leetcode.com/problems/tallest-billboard/	Date	Not Done
+https://leetcode.com/problems/pizza-with-3n-slices/	Date	Not Done
+https://leetcode.com/problems/reducing-dishes/	Date	Not Done
+3.Multi Dimensions DP	Date	Not Done
+https://leetcode.com/problems/triangle/	Date	Not Done
+https://leetcode.com/problems/combination-sum-iv/	Date	Not Done
+https://leetcode.com/problems/out-of-boundary-paths/	Date	Not Done
+https://leetcode.com/problems/knight-probability-in-chessboard/	Date	Not Done
+https://leetcode.com/problems/champagne-tower/	Date	Not Done
+https://leetcode.com/problems/largest-sum-of-averages/	Date	Not Done
+https://leetcode.com/problems/minimum-falling-path-sum/	Date	Not Done
+https://leetcode.com/problems/video-stitching/	Date	Not Done
+https://leetcode.com/problems/longest-arithmetic-subsequence/	Date	Not Done
+https://leetcode.com/problems/stone-game-ii/	Date	Not Done
+https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/	Date	Not Done
+https://leetcode.com/problems/dice-roll-simulation/	Date	Not Done
+https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/	Date	Not Done
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/	Date	Not Done
+https://leetcode.com/problems/create-maximum-number/	Date	Not Done
+https://leetcode.com/problems/frog-jump/	Date	Not Done
+https://leetcode.com/problems/split-array-largest-sum/	Date	Not Done
+https://leetcode.com/problems/freedom-trail/	Date	Not Done
+https://leetcode.com/problems/minimum-number-of-refueling-stops/	Date	Not Done
+https://leetcode.com/problems/number-of-music-playlists/	Date	Not Done
+https://leetcode.com/problems/count-vowels-permutation/	Date	Not Done
+https://leetcode.com/problems/minimum-falling-path-sum-ii/	Date	Not Done
+https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/	Date	Not Done
+https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/	Date	Not Done
+https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/	Date	Not Done
+https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/	Date	Not Done
+https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/	Date	Not Done
+https://leetcode.com/problems/paint-house-iii/	Date	Not Done
+https://leetcode.com/problems/count-all-possible-routes/	Date	Not Done
+4.Interval DP	Date	Not Done
+https://leetcode.com/problems/guess-number-higher-or-lower-ii/	Date	Not Done
+https://leetcode.com/problems/arithmetic-slices/	Date	Not Done
+https://leetcode.com/problems/predict-the-winner/	Date	Not Done
+https://leetcode.com/problems/palindromic-substrings/	Date	Not Done
+https://leetcode.com/problems/stone-game/	Date	Not Done
+https://leetcode.com/problems/minimum-score-triangulation-of-polygon/	Date	Not Done
+https://leetcode.com/problems/last-stone-weight-ii/	Date	Not Done
+https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/	Date	Not Done
+https://leetcode.com/problems/stone-game-vii/	Date	Not Done
+https://leetcode.com/problems/burst-balloons/	Date	Not Done
+https://leetcode.com/problems/remove-boxes/	Date	Not Done
+https://leetcode.com/problems/strange-printer/	Date	Not Done
+https://leetcode.com/problems/valid-permutations-for-di-sequence/	Date	Not Done
+https://leetcode.com/problems/minimum-cost-to-merge-stones/	Date	Not Done
+https://leetcode.com/problems/allocate-mailboxes/	Date	Not Done
+https://leetcode.com/problems/minimum-cost-to-cut-a-stick/	Date	Not Done
+https://leetcode.com/problems/stone-game-v/	Date	Not Done
+5.bit DP	Date	Not Done
+https://leetcode.com/problems/can-i-win/	Date	Not Done
+https://leetcode.com/problems/partition-to-k-equal-sum-subsets/	Date	Not Done
+https://leetcode.com/problems/stickers-to-spell-word/	Date	Not Done
+https://leetcode.com/problems/shortest-path-visiting-all-nodes/	Date	Not Done
+https://leetcode.com/problems/smallest-sufficient-team/	Date	Not Done
+https://leetcode.com/problems/maximum-students-taking-exam/	Date	Not Done
+https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/	Date	Not Done
+https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/	Date	Not Done
+https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/	Date	Not Done
+https://leetcode.com/problems/distribute-repeating-integers/	Date	Not Done
+https://leetcode.com/problems/maximize-grid-happiness/	Date	Not Done
+6.Digit DP	Date	Not Done
+https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/	Date	Not Done
+https://leetcode.com/problems/numbers-at-most-n-given-digit-set/	Date	Not Done
+https://leetcode.com/problems/numbers-with-repeated-digits/	Date	Not Done
+7.DP on Trees	Date	Not Done
+https://leetcode.com/problems/unique-binary-search-trees-ii/	Date	Not Done
+https://leetcode.com/problems/house-robber-iii/	Date	Not Done
+https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/	Date	Not Done
+https://leetcode.com/problems/linked-list-in-binary-tree/	Date	Not Done
+https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/	Date	Not Done
+https://leetcode.com/problems/binary-tree-cameras/	Date	Not Done
+https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/	Date	Not Done
+https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/	Date	Not Done
+8.String DP	Date	Not Done
+https://leetcode.com/problems/is-subsequence/	Date	Not Done
+https://leetcode.com/problems/palindrome-partitioning/	Date	Not Done
+https://leetcode.com/problems/word-break/	Date	Not Done
+https://leetcode.com/problems/unique-substrings-in-wraparound-string/	Date	Not Done
+https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/	Date	Not Done
+https://leetcode.com/problems/longest-string-chain/	Date	Not Done
+https://leetcode.com/problems/longest-happy-string/	Date	Not Done
+https://leetcode.com/problems/longest-valid-parentheses/	Date	Not Done
+https://leetcode.com/problems/distinct-subsequences/	Date	Not Done
+https://leetcode.com/problems/word-break-ii/	Date	Not Done
+https://leetcode.com/problems/count-the-repetitions/	Date	Not Done
+https://leetcode.com/problems/concatenated-words/	Date	Not Done
+https://leetcode.com/problems/count-different-palindromic-subsequences/	Date	Not Done
+https://leetcode.com/problems/distinct-subsequences-ii/	Date	Not Done
+https://leetcode.com/problems/longest-chunked-palindrome-decomposition/	Date	Not Done
+https://leetcode.com/problems/palindrome-partitioning-iii/	Date	Not Done
+https://leetcode.com/problems/find-all-good-strings/	Date	Not Done
+https://leetcode.com/problems/string-compression-ii/	Date	Not Done
+https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/	Date	Not Done
+9.Probability DP	Date	Not Done
+https://leetcode.com/problems/soup-servings/	Date	Not Done
+https://leetcode.com/problems/new-21-game/	Date	Not Done
+https://leetcode.com/problems/airplane-seat-assignment-probability/	Date	Not Done
+10.Classic DPs	Date	Not Done
+A.Cadane's Algorithm	Date	Not Done
+https://leetcode.com/problems/maximum-subarray/	Date	Not Done
+https://leetcode.com/problems/maximum-product-subarray/	Date	Not Done
+https://leetcode.com/problems/bitwise-ors-of-subarrays/	Date	Not Done
+https://leetcode.com/problems/longest-turbulent-subarray/	Date	Not Done
+https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/	Date	Not Done
+https://leetcode.com/problems/k-concatenation-maximum-sum/	Date	Not Done
+https://leetcode.com/problems/largest-divisible-subset/	Date	Not Done
+https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/	Date	Not Done
+B.LCS	Date	Not Done
+https://leetcode.com/problems/longest-palindromic-substring/	Date	Not Done
+https://leetcode.com/problems/longest-palindromic-subsequence/	Date	Not Done
+https://leetcode.com/problems/maximum-length-of-repeated-subarray/	Date	Not Done
+https://leetcode.com/problems/longest-common-subsequence/	Date	Not Done
+https://leetcode.com/problems/regular-expression-matching/	Date	Not Done
+https://leetcode.com/problems/wildcard-matching/	Date	Not Done
+https://leetcode.com/problems/edit-distance/	Date	Not Done
+https://leetcode.com/problems/interleaving-string/	Date	Not Done
+https://leetcode.com/problems/shortest-common-supersequence/	Date	Not Done
+https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/	Date	Not Done
+https://leetcode.com/problems/max-dot-product-of-two-subsequences/	Date	Not Done
+C.LIS	Date	Not Done
+https://leetcode.com/problems/longest-increasing-subsequence/	Date	Not Done
+https://leetcode.com/problems/number-of-longest-increasing-subsequence/	Date	Not Done
+https://leetcode.com/problems/russian-doll-envelopes/	Date	Not Done
+https://leetcode.com/problems/delete-columns-to-make-sorted-iii/	Date	Not Done
+https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/	Date	Not Done
+https://leetcode.com/problems/maximum-height-by-stacking-cuboids/	Date	Not Done
+D.2D Grid Traversal	Date	Not Done
+https://leetcode.com/problems/unique-paths/	Date	Not Done
+https://leetcode.com/problems/unique-paths-ii/	Date	Not Done
+https://leetcode.com/problems/minimum-path-sum/	Date	Not Done
+https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/	Date	Not Done
+https://leetcode.com/problems/where-will-the-ball-fall/	Date	Not Done
+https://leetcode.com/problems/dungeon-game/	Date	Not Done
+https://leetcode.com/problems/cherry-pickup/	Date	Not Done
+https://leetcode.com/problems/number-of-paths-with-max-score/	Date	Not Done
+https://leetcode.com/problems/cherry-pickup-ii/	Date	Not Done
+https://leetcode.com/problems/kth-smallest-instructions/	Date	Not Done
+E.Cumulative Sum	Date	Not Done
+https://leetcode.com/problems/range-sum-query-immutable/	Date	Not Done
+https://leetcode.com/problems/maximal-square/	Date	Not Done
+https://leetcode.com/problems/range-sum-query-2d-immutable/	Date	Not Done
+https://leetcode.com/problems/largest-plus-sign/	Date	Not Done
+https://leetcode.com/problems/push-dominoes/	Date	Not Done
+https://leetcode.com/problems/largest-1-bordered-square/	Date	Not Done
+https://leetcode.com/problems/count-square-submatrices-with-all-ones/	Date	Not Done
+https://leetcode.com/problems/matrix-block-sum/	Date	Not Done
+https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/	Date	Not Done
+https://leetcode.com/problems/count-submatrices-with-all-ones/	Date	Not Done
+https://leetcode.com/problems/ways-to-make-a-fair-array/	Date	Not Done
+https://leetcode.com/problems/maximal-rectangle/	Date	Not Done
+https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/	Date	Not Done
+https://leetcode.com/problems/super-washing-machines/	Date	Not Done
+https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/	Date	Not Done
+https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/	Date	Not Done
+https://leetcode.com/problems/get-the-maximum-score/	Date	Not Done
+F.Hashmap (SubArray)	Date	Not Done
+https://leetcode.com/problems/continuous-subarray-sum/	Date	Not Done
+https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/	Date	Not Done
+https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/	Date	Not Done
+11.DP + Alpha (Tricks/DS)	Date	Not Done
+https://leetcode.com/problems/arithmetic-slices-ii-subsequence/	Date	Not Done
+https://leetcode.com/problems/odd-even-jump/	Date	Not Done
+https://leetcode.com/problems/constrained-subsequence-sum/	Date	Not Done
+https://leetcode.com/problems/delivering-boxes-from-storage-to-ports/	Date	Not Done
+12.Insertion DP	Date	Not Done
+https://leetcode.com/problems/k-inverse-pairs-array/	Date	Not Done
+13.Graph DP	Date	Not Done
+https://leetcode.com/problems/cheapest-flights-within-k-stops/	Date	Not Done
+https://leetcode.com/problems/find-the-shortest-superstring/	Date	Not Done
+14.Memoization	Date	Not Done
+https://leetcode.com/problems/minimum-jumps-to-reach-home/	Date	Not Done
+https://leetcode.com/problems/scramble-string/	Date	Not Done
+https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/	Date	Not Done
+https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/	Date	Not Done
+https://leetcode.com/problems/jump-game-v/	Date	Not Done
+https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/	Date	Not Done
+15.Binary Lifting	Date	Not Done
+https://leetcode.com/problems/kth-ancestor-of-a-tree-node/	Date	Not Done
+16.Math	Date	Not Done
+https://leetcode.com/problems/ugly-number-ii/	Date	Not Done
+https://leetcode.com/problems/count-sorted-vowel-strings/	Date	Not Done
+https://leetcode.com/problems/race-car/	Date	Not Done
+https://leetcode.com/problems/super-egg-drop/	Date	Not Done
+https://leetcode.com/problems/least-operators-to-express-number/	Date	Not Done
+https://leetcode.com/problems/largest-multiple-of-three/	Date	Not Done
 https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/
