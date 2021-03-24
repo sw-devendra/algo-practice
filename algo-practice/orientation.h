@@ -52,7 +52,7 @@ ostream& operator<<(ostream& os, Orientation o) {
 
 Orientation orientation(Point p, Point q, Point r) {
 	int val = (q.y - p.y) * (r.x - q.x) - (r.y - q.y) * (q.x - p.x);
-	return (val == 0) ? COLINEAR : ((val > 0) ? ANTICLOCKWISE : CLOCKWISE);
+	return (val == 0) ? COLINEAR : ((val > 0) ? CLOCKWISE : ANTICLOCKWISE);
 }
 
 

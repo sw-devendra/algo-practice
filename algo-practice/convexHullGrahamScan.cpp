@@ -31,14 +31,14 @@ void printPoints(Point* points, int count) {
 void insertionSort(Point* points, int start, int count) {
 	printPoints(points, count);
 	for (int i = start; i < (count-1); i++) { // already sorted till i
-		int j = i + 1;
-		for (; j >= start; j--) {
-			if (compare(points[i], points[j]) < 0) {
+		int j = i;
+		for (; j >= start; j--) { // compare i + 1th with all previous
+			if (compare(points[j], points[i + 1]) < 0) {
 				break;
 			}
 		}
-		if (j != i+1) { // i + 1 should be inserted after j
-			auto t = points[i + 1];
+		if (j != i) { // i + 1 should be inserted after j
+			auto t = points[i+1];
 			for (int k = i; k > j; k--) {
 				points[k + 1] = points[k];
 			}
